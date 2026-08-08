@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Pablo - Portfolio Técnico | Desarrollo y Sistemas Interactivos</title>
+		<title>Pablo - Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,17 +24,16 @@
 						<nav id="nav">
 							<ul>
 								<li class="current"><a href="index.html">Inicio</a></li>
-								<li><a href="#main">Proyectos</a></li>
-								<li><a href="#skills">Aptitudes</a></li>
-								<li><a href="#footer">Contacto</a></li>
+								<li><a href="blender.html">Proyecto 3D</a></li>
+								<li><a href="figma.html">Proyecto UI/UX</a></li>
 							</ul>
 						</nav>
 
 					<!-- Banner -->
 						<section id="banner">
 							<header>
-								<h2>Hola, soy Pablo</h2>
-								<p>Desarrollo de Software, Entornos Virtuales y Sistemas Interactivos</p>
+								<h2>Desarrollo de Software e Interacción 3D</h2>
+								<p>Especializado en programación C#, lógica de entornos virtuales y diseño de interfaces</p>
 							</header>
 						</section>
 
@@ -43,38 +42,32 @@
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<section class="first">
-										<i class="icon solid featured fa-code"></i>
+										<i class="icon solid fa-code featured"></i>
 										<header>
-											<h2>Ingeniería y Lógica</h2>
+											<h3>Desarrollo C#</h3>
 										</header>
-										<p>Aplicación de Programación Orientada a Objetos y estructuras de datos eficientes (nods, árboles, colas) para la resolución de problemas lógicos en C#.</p>
+										<p>Implementación de programación orientada a objetos, lógica de videojuegos y estructuras de datos eficientes.</p>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="middle">
-										<i class="icon solid featured alt fa-vr-cardboard"></i>
+										<i class="icon solid fa-cube featured alt"></i>
 										<header>
-											<h2>Realidad Virtual y 3D</h2>
+											<h3>Entornos 3D y VR</h3>
 										</header>
-										<p>Desarrollo de experiencias inmersivas en Unreal Engine, optimización de modelos 3D y flujos de trabajo orientados a rendimiento en Blender.</p>
+										<p>Modelado, texturizado e iluminación en Blender integrados en motores como Unreal Engine.</p>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="last">
-										<i class="icon solid featured alt2 fa-desktop"></i>
+										<i class="icon solid fa-desktop featured alt2"></i>
 										<header>
-											<h2>Diseño UX y Accesibilidad</h2>
+											<h3>Diseño UI/UX</h3>
 										</header>
-										<p>Creación de interfaces centradas en el usuario (UI/UX) mediante Figma, priorizando la accesibilidad y la interacción persona-ordenador.</p>
+										<p>Diseño de sistemas de interfaz dinámicos, prototipado de menús e interacción de usuario en Figma.</p>
 									</section>
 								</div>
 							</div>
-							<footer>
-								<ul class="actions">
-									<li><a href="#main" class="button large">Ver Proyectos</a></li>
-									<li><a href="#skills" class="button alt large">Ver Aptitudes Técnicas</a></li>
-								</ul>
-							</footer>
 						</section>
 
 				</section>
@@ -85,82 +78,57 @@
 						<div class="row">
 							<div class="col-12">
 
-								<!-- Portfolio -->
+								<!-- Portfolio Grid -->
 									<section>
 										<header class="major">
 											<h2>Proyectos Destacados</h2>
 										</header>
 										<div class="row">
+											<!-- Proyecto C# -->
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic02.jpg" alt="Proyecto C#" /></a>
+													<!-- Si aún no tienes imagen de C#, puedes omitir la etiqueta <a> de la imagen -->
 													<header>
 														<h3>Lógica y Estructuras en C#</h3>
 													</header>
 													<p>Desarrollo de componentes lógicos y resolución de problemas algorítmicos complejos aplicando estructuras de datos dinámicas.</p>
 													<footer>
-														<ul class="actions">
-															<li><a href="#" class="button alt">Ver repositorio GitHub</a></li>
-														</ul>
+														<div style="text-align: center;">
+															<a href="https://github.com/pablerasra" target="_blank" class="button alt" style="display: inline-block; margin: 0 auto;">Ver repositorio GitHub</a>
+														</div>
 													</footer>
 												</section>
 											</div>
+
+											<!-- Proyecto Unreal VR -->
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="images/pic03.jpg" alt="Proyecto VR" /></a>
+													<a href="blender.html" class="image featured"><img src="blender1.png" alt="Escenario 3D Blender" /></a>
 													<header>
-														<h3>Entorno VR en Unreal Engine</h3>
+														<h3>Diseño y Modelado 3D (Blender)</h3>
 													</header>
-													<p>Prototipado de experiencias de realidad virtual, integración de modelado 3D optimizado de Blender y gestión de interacciones espaciales.</p>
+													<p>Creación integral de entorno optimizado para videojuegos, texturizado PBR y configuración de iluminación atmosférica.</p>
 													<footer>
-														<ul class="actions">
-															<li><a href="blender.html" class="button alt">Ver renders y detalles</a></li>
-														</ul>
+														<div style="text-align: center;">
+															<a href="blender.html" class="button alt" style="display: inline-block; margin: 0 auto;">Ver renders y detalles</a>
+														</div>
 													</footer>
 												</section>
 											</div>
+
+											<!-- Proyecto Figma -->
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="figma.html" class="image featured"><img src="figma-pantalla.PNG" alt="Diseño de Interfaz Balatro" /></a>
+													<a href="figma.html" class="image featured"><img src="figma-pantalla.PNG" alt="Diseño UX e Interfaces" /></a>
 													<header>
 														<h3>Diseño UX e Interfaces (Figma)</h3>
 													</header>
 													<p>Estudio de usabilidad y diseño de interfaces intuitivas orientadas a mejorar la accesibilidad y la experiencia del usuario final.</p>
 													<footer>
-														<ul class="actions">
-															<li><a href="figma.html" class="button alt">Ver caso de estudio</a></li>
-														</ul>
+														<div style="text-align: center;">
+															<a href="figma.html" class="button alt" style="display: inline-block; margin: 0 auto;">Ver caso de estudio</a>
+														</div>
 													</footer>
-												</section>
-											</div>
-										</div>
-									</section>
-
-							</div>
-							<div class="col-12" id="skills">
-
-								<!-- Skills / Aptitudes Section -->
-									<section>
-										<header class="major">
-											<h2>Aptitudes y Tecnologías</h2>
-										</header>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section class="box">
-													<header>
-														<h3>Desarrollo y Lógica</h3>
-													</header>
-													<p><strong>Lenguajes y Programación:</strong> C#, POO (Programación Orientada a Objetos), Algoritmos y Estructuras de Datos (pilas, colas, nodos y árboles).</p>
-													<p><strong>Control de Versiones:</strong> Git, GitHub y control de flujos de trabajo en equipos de desarrollo.</p>
-												</section>
-											</div>
-											<div class="col-6 col-12-small">
-												<section class="box">
-													<header>
-														<h3>Entornos, 3D y Diseño</h3>
-													</header>
-													<p><strong>Motores y Herramientas:</strong> Unreal Engine (VR), Unity, Blender (Modelado y optimización).</p>
-													<p><strong>Diseño y Metodología:</strong> Figma (UI/UX, accesibilidad), experiencia previa en coordinación y gestión de proyectos en equipo.</p>
 												</section>
 											</div>
 										</div>
