@@ -10,6 +10,26 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Estilos para igualar las alturas de las tarjetas */
+			.equal-height-row {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.equal-height-row > [class*="col-"] {
+				display: flex;
+			}
+			.equal-height-row .box {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				width: 100%;
+			}
+			.equal-height-row .image.featured img {
+				height: 200px;
+				object-fit: cover;
+			}
+		</style>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -83,15 +103,17 @@
 										<header class="major">
 											<h2 style="text-align: center;">Proyectos Destacados</h2>
 										</header>
-										<div class="row">
+										<div class="row equal-height-row">
 											<!-- Proyecto C# -->
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="https://github.com/pablerasra" target="_blank" class="image featured"><img src="csharp.PNG" alt="Lógica y Estructuras en C#" /></a>
-													<header>
-														<h3 style="text-align: center;">Lógica y Estructuras en C#</h3>
-													</header>
-													<p>Desarrollo de componentes lógicos y resolución de problemas algorítmicos complejos aplicando estructuras de datos dinámicas.</p>
+													<div>
+														<a href="https://github.com/pablerasra" target="_blank" class="image featured"><img src="csharp.PNG" alt="Lógica y Estructuras en C#" /></a>
+														<header>
+															<h3 style="text-align: center;">Lógica y Estructuras en C#</h3>
+														</header>
+														<p>Desarrollo de componentes lógicos y resolución de problemas algorítmicos complejos aplicando estructuras de datos dinámicas.</p>
+													</div>
 													<footer>
 														<div style="text-align: center;">
 															<a href="https://github.com/pablerasra" target="_blank" class="button alt" style="display: inline-block; margin: 0 auto;">Ver repositorio GitHub</a>
@@ -103,11 +125,13 @@
 											<!-- Proyecto Unreal VR -->
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="blender.html" class="image featured"><img src="blender2.png" alt="Entorno 3D y VR" /></a>
-													<header>
-														<h3 style="text-align: center;">Entorno VR en Unreal Engine</h3>
-													</header>
-													<p>Prototipado de experiencias de realidad virtual, integración de modelado 3D optimizado de Blender y gestión de interacciones espaciales.</p>
+													<div>
+														<a href="blender.html" class="image featured"><img src="blender2.png" alt="Entorno 3D y VR" /></a>
+														<header>
+															<h3 style="text-align: center;">Entorno VR en Unreal Engine</h3>
+														</header>
+														<p>Prototipado de experiencias de realidad virtual, integración de modelado 3D optimizado de Blender y gestión de interacciones espaciales.</p>
+													</div>
 													<footer>
 														<div style="text-align: center;">
 															<a href="blender.html" class="button alt" style="display: inline-block; margin: 0 auto;">Ver renders y detalles</a>
@@ -119,11 +143,13 @@
 											<!-- Proyecto Figma -->
 											<div class="col-4 col-6-medium col-12-small">
 												<section class="box">
-													<a href="figma.html" class="image featured"><img src="figma-pantalla.png" alt="Diseño UX e Interfaces" /></a>
-													<header>
-														<h3 style="text-align: center;">Diseño UX e Interfaces (Figma)</h3>
-													</header>
-													<p>Estudio de usabilidad y diseño de interfaces intuitivas orientadas a mejorar la accesibilidad y la experiencia del usuario final.</p>
+													<div>
+														<a href="figma.html" class="image featured"><img src="figma-pantalla.PNG" alt="Diseño UX e Interfaces" /></a>
+														<header>
+															<h3 style="text-align: center;">Diseño UX e Interfaces (Figma)</h3>
+														</header>
+														<p>Estudio de usabilidad y diseño de interfaces intuitivas orientadas a mejorar la accesibilidad y la experiencia del usuario final.</p>
+													</div>
 													<footer>
 														<div style="text-align: center;">
 															<a href="figma.html" class="button alt" style="display: inline-block; margin: 0 auto;">Ver caso de estudio</a>
