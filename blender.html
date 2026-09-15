@@ -10,6 +10,27 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Contenedor responsivo para el vídeo de YouTube */
+			.video-container {
+				position: relative;
+				padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+				height: 0;
+				overflow: hidden;
+				max-width: 900px;
+				margin: 25px auto;
+				background: #000;
+				border-radius: 8px;
+			}
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+		</style>
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -26,6 +47,7 @@
 								<li><a href="index.html">Inicio</a></li>
 								<li class="current"><a href="blender.html">Proyecto 3D</a></li>
 								<li><a href="figma.html">Proyecto UI/UX</a></li>
+								<li><a href="rain.html">Proyecto RAIN</a></li>
 							</ul>
 						</nav>
 
@@ -62,6 +84,16 @@
 									<!-- Tercera Imagen Blender -->
 									<img src="blender3.png" alt="Vista adicional del modelo 3D" style="width: 100%; max-width: 900px; display: block; margin: 25px auto; border-radius: 8px;" />
 								</section>
+
+								<!-- Vídeo de YouTube incrustado -->
+								<div class="video-container">
+									<iframe 
+										src="https://www.youtube-nocookie.com/embed/WSI545lKxoI" 
+										title="Demostración Unreal Engine / VR" 
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+										allowfullscreen>
+									</iframe>
+								</div>
 
 								<!-- Separador visual -->
 								<hr style="margin: 50px 0; border: 0; border-top: 2px solid #e5e5e5;" />
