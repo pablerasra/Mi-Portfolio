@@ -10,6 +10,28 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Contenedor responsivo para el vídeo de YouTube */
+			.video-container {
+				position: relative;
+				padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+				height: 0;
+				overflow: hidden;
+				max-width: 100%;
+				background: #000;
+				margin-top: 1.5em;
+				margin-bottom: 1.5em;
+				border-radius: 6px;
+			}
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border: 0;
+			}
+		</style>
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -38,33 +60,65 @@
 
 						<!-- Content -->
 							<article class="box post">
-								<a href="#" class="image featured"><img src="rain.PNG" alt="Proyecto RAIN" /></a>
+								<a href="#" class="image featured"><img src="PortadaRain.PNG" alt="Proyecto RAIN" /></a>
 								<header>
 									<h2>Proyecto RAIN</h2>
-									<p>Diseño de mecánicas de juego, ambientación e integración de lógica interactiva</p>
+									<p>Videojuego de aventuras e interacción en entorno virtual</p>
 								</header>
-								<p>
-									<strong>RAIN</strong> es un proyecto enfocado en la creación de una experiencia interactiva combinando diseño de entornos, físicas e implementación de mecánicas mediante programación. El desarrollo abarca desde el prototipado inicial del gameplay hasta la integración final de activos visuales y sistemas de interacción.
-								</p>
-								
+
+								<!-- 1. Presentación del videojuego -->
 								<section>
 									<header>
-										<h3>Puntos Clave del Desarrollo</h3>
+										<h3>Presentación del Proyecto</h3>
 									</header>
+									<p>
+										<strong>RAIN</strong> es un videojuego enfocado en la exploración e interacción dentro de un entorno inmersivo. El proyecto combina una narrativa visual cuidada con la integración de elementos 3D y sistemas de juego dinámicos, ofreciendo una experiencia centrada en la ambientación y la inmersión del jugador.
+									</p>
+								</section>
+
+								<!-- 2. Mecánicas de juego -->
+								<section>
+									<header>
+										<h3>Mecánicas Principales</h3>
+									</header>
+									<p>
+										El núcleo jugable se articula a través del control de personaje en tiempo real, resolución de puzles basados en el entorno y sistemas de interacción espacial. Las mecánicas clave incluyen:
+									</p>
 									<ul class="style2">
-										<li><strong>Lógica e Interacción:</strong> Programación de comportamientos, control de personajes y mecánicas dinámicas del entorno.</li>
-										<li><strong>Ambientación y Diseño 3D:</strong> Integración de assets optimizados e iluminación enfocada a la inmersión del jugador.</li>
-										<li><strong>Optimización y Renderizado:</strong> Gestión de rendimiento y ajuste de mallas para mantener una tasa estable de fotogramas.</li>
+										<li><strong>Control e Interacción:</strong> Respuestas fluidas de movimiento e interacción directa con elementos dinámicos del escenario.</li>
+										<li><strong>Sistemas de Eventos:</strong> Disparadores (triggers) que activan cambios en el entorno y avanzan el flujo de la partida.</li>
+										<li><strong>Ambientación Dinámica:</strong> Gestión de iluminación y efectos visuales sincronizados con el estado de la jugabilidad.</li>
 									</ul>
 								</section>
 
+								<!-- 3. Aportación en el desarrollo -->
 								<section>
 									<header>
-										<h3>Detalles Técnicos</h3>
+										<h3>Mi Aportación al Desarrollo</h3>
 									</header>
 									<p>
-										El sistema está construido garantizando un código limpio y modular, separando la lógica del core del juego de la capa de interfaz y efectos visuales para facilitar su escalabilidad.
+										En este proyecto he asumido el desarrollo de la **lógica del juego y la integración técnica**. Mis responsabilidades principales incluyeron la programación de los comportamientos del personaje, el diseño e implementación del sistema de eventos interactivos, la integración de assets 3D optimizados desde Blender y la configuración del entorno gráfico para garantizar un rendimiento fluido y estable.
 									</p>
+								</section>
+
+								<!-- 4. Tráiler en YouTube -->
+								<section>
+									<header>
+										<h3>Tráiler del Videojuego</h3>
+									</header>
+									<p>
+										Puedes ver el tráiler oficial a continuación o acceder directamente a través de <a href="https://www.youtube.com/watch?v=TU_ID_DE_YOUTUBE" target="_blank" rel="noopener noreferrer">este enlace a YouTube</a>.
+									</p>
+
+									<!-- Reproductor de YouTube incrustado (Reemplaza TU_ID_DE_YOUTUBE por el ID del vídeo) -->
+									<div class="video-container">
+										<iframe 
+											src="https://www.youtube-nocookie.com/embed/TU_ID_DE_YOUTUBE" 
+											title="Tráiler de RAIN" 
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+											allowfullscreen>
+										</iframe>
+									</div>
 								</section>
 
 								<footer style="margin-top: 2em; text-align: center;">
